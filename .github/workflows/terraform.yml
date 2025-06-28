@@ -27,6 +27,7 @@ jobs:
         shell: bash
         working-directory: ./terraform
     steps:
+      
       - name: Apply terrform code changes
       - uses: actions/checkout@v4
       
