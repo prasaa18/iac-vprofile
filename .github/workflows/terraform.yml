@@ -29,13 +29,14 @@ jobs:
         working-directory: ./terraform
 
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Terraform
+      - name: Setup Terraform with specified version
         uses: hashicorp/setup-terraform@v2
         with:
-          terraform-version: 1.6.3
+         terraform_version: 1.6.3
+
 
       - name: Show Terraform version
         run: terraform version
