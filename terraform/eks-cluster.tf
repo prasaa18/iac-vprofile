@@ -18,7 +18,7 @@ module "eks" {
     one = {
       name = "node-group-1"
 
-      instance_types = ["t3.small"]
+      instance_types = ["t3.sma6ll"]
 
       min_size     = 1
       max_size     = 3
@@ -36,3 +36,4 @@ module "eks" {
     }
   }
 }
+##
