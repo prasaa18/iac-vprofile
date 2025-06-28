@@ -58,5 +58,5 @@ jobs:
         run: exit 1
 
       - name: Terraform apply
-        run: terraform apply tfplan
+        run: terraform apply planfile
      
