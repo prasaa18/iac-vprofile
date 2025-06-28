@@ -32,7 +32,7 @@ jobs:
         uses: actions/checkout@v4
       
       - name: setup Terraform with specified version on the runner
-        uses: harshicorp/setup-terraform@v2
+        uses: harshicorp/setup-terraform@v4
         # with:
         #   terraform-version: 1.6.3
 
