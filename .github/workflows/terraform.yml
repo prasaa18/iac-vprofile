@@ -77,7 +77,7 @@ jobs:
       - name: get kube config file 
         id: getconfig
         if: steps.apply.outcome == 'success'
-        run: aws eks update-kubeconfig --name $EKS_CLUSTER_NAME --region ${{env.AWS_DEFAULT_REGION}} --alias eks --profile vpro-eks-admin-pro
+        run: aws eks update-kubeconfig --name $EKS_CLUSTER_NAME --region ${{env.AWS_DEFAULT_REGION}} 
 
       - name: Install ingress controller
         if: steps.apply.outcome=='success' && steps.getconfig.outcome=='success'
