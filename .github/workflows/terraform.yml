@@ -64,7 +64,7 @@ jobs:
       - name: terraform apply
         id: apply
         #if: github.ref ==  github.ref == 'refs/heads/main' && github.event_name=='push'
-        if: github.ref ==  github.ref == 'refs/heads/stage' && github.event_name=='push'
+       # if: github.ref ==  github.ref == 'refs/heads/stage' && github.event_name=='push'
         run: terraform apply -auto-approve -input=false -parallelism=1 planfile
         
       - name: Configure aws credetials
