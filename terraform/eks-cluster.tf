@@ -10,7 +10,7 @@ module "eks" {
 
   cluster_endpoint_public_access = true
 
-  # Remove KMS references
+  # Disable cluster encryption (no KMS)
   cluster_encryption_config = []
 
   eks_managed_node_group_defaults = {
